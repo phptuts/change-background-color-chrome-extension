@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>You Very Own Chrome Extension!!!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change Background Color</title>
+    <style>
+      body {
+        width: 200px;
+        height: 200px;
+      }
+      #change_color {
+        width: 90%;
+        height: 100px;
+        margin: 5%;
+        color: white;
+      }
+      #color_hex {
+        text-align: center;
+        margin: 20px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Change Color</h1>
+    <input type="color" id="color_picker" />
+    <br />
+    <br />
+    <button id="change_color_btn">Change Color</button>
+    <button id="clear_btn">Clear Btn</button>
+    <div id="change_color">
+      <h2 id="color_hex"></h2>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
